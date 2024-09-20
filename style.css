@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.card {
+    display: inline-block;
+    width: 500px;
+    height: 675px;
+    border-radius: 25px;
+    box-shadow: 3px 4px 6px darkgray;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+}
+
+.card img {
+    width: 500px;
+    object-fit: contain;
+}
+
+p, i {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.info {
+    position: absolute;
+    background-color: white;
+    bottom: 30px;
+    left: 35px;
+    padding: 15px;
+    border-radius: 30px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: transform 0.5s;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.point {
+    position: absolute;
+    background-color: white;
+    width: 20px;
+    bottom: 30px;
+    left: 300px;
+    padding: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: transform 0.5s;
+}
+
+.card:hover .point {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.point2 {
+    position: absolute;
+    background-color: white;
+    width: 20px;
+    bottom: 30px;
+    left: 400px;
+    padding: 15px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: transform 0.5s;
+}
+
+.card:hover .point2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.save {
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 60px;
+    top: 60px;
+    left: 360px;
+    padding: 15px;
+    border-radius: 30px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
+
+.card:hover .save {
+    opacity: 1;
+    transform: translateY(0);
+}
